@@ -1,0 +1,389 @@
+/*
+Theme Name: Japan Indonesia Investment and Management
+Author: Anoh
+Description: Customize Theme, designed for JIIM
+Version: 1.0
+Text Domain: html, css, python, bootstrap
+*/
+
+/* Color */
+:root {
+    --primary: #ed272c;
+    --secondary: #ed2828;
+    --light: #F2F2F2;
+    --dark: #272630;
+}
+
+/* All Buttons */
+.btn {
+    font-weight: 700;
+    transition: .5s;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0 8px 6px -6px #555555;
+    -moz-box-shadow: 0 8px 6px -6px #555555;
+    box-shadow: 0 8px 6px -6px #555555;
+}
+
+.btn.btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+/* Back to top Button */
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
+/* Navigation */
+
+.navbar-dark .navbar-nav .nav-link {
+    position: relative;
+    margin-left: 30px;
+    padding: 35px 0;
+    font-size: 18px;
+    color: #272630;
+    outline: none;
+    transition: .5s;
+}
+
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+    padding: 20px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ed272c;
+}
+
+/* Project */
+
+.service-item,
+.contact-item {
+    background: url(img/3-1.jpg)  top center no-repeat;
+    background-size: cover;
+    transition: .5s;
+    height:300px;
+}
+
+.service-item:hover,
+.contact-item:hover {
+    background: url(img/3-1.jpg)  bottom center no-repeat;
+    background-size: cover;
+}
+
+.service-item .service-icon,
+.contact-item .contact-icon {
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+    color: #F2F2F2;
+    background: #FFFFFF;
+    transform: rotate(-45deg);
+}
+
+.service-item .service-icon div,
+.contact-item .contact-icon div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ed272c;
+    transition: .5s;
+}
+
+.service-item .service-icon i,
+.contact-item .contact-icon i {
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.service-item:hover .service-icon div,
+.contact-item:hover .contact-icon div {
+    background: #F2F2F2;
+}
+
+.service-item:hover .service-icon i,
+.contact-item:hover .contact-icon i {
+    color: #ed272c;
+}
+
+.service-item a.btn {
+    position: relative;
+    bottom: -30px;
+    opacity: 0;
+}
+
+.service-item:hover a.btn {
+    bottom: 0;
+    opacity: 1;
+}
+/* Project */
+.service-project,
+.contact-project {
+    background: url(img/3-1.jpg)  top center no-repeat;
+    background-size: cover;
+    transition: .5s;
+}
+
+.service-project:hover,
+.contact-project:hover {
+    background: url(img/3-1.jpg)  bottom center no-repeat;
+    background-size: cover;
+}
+
+.service-project .service-icon-project,
+.contact-project .contact-icon-project {
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+    color: #F2F2F2;
+    background: #FFFFFF;
+    transform: rotate(-45deg);
+}
+
+.service-project .service-icon-project div,
+.contact-project .contact-icon-project div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ed272c;
+    transition: .5s;
+}
+
+.service-project .service-icon-project i,
+.contact-project .contact-icon-project i {
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+.service-project:hover .service-icon-project div,
+.contact-project:hover .contact-icon-project div {
+    background: #F2F2F2;
+}
+
+.service-project:hover .service-icon-project i,
+.contact-project:hover .contact-icon-project i {
+    color: #ed272c;
+}
+
+.service-project a.btn {
+    position: relative;
+    bottom: -30px;
+    opacity: 0;
+}
+
+.service-project:hover a.btn {
+    bottom: 0;
+    opacity: 1;
+}
+
+
+/* About Us */
+.bg-testimonial {
+    background: url(img/about-3.jpg) top left no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 991.98px) {
+    .bg-testimonial {
+        background-size: cover;
+    }
+    
+    .testimonial-carousel p{
+        background: rgba(255, 255, 255, 0.4);
+    }
+}
+
+.testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next{
+    position: relative;
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: #ed2828;
+    font-size: 15px;
+    border-radius: 45px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: #272630;
+}
+
+.testimonial-carousel .owl-item img {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* Logo */
+
+#logo-img {
+    display: flex;
+    height: 15%;
+    width: 15%;
+    background: none;
+    padding: 0 32px;
+    align-items: center;
+    color: white;
+    transition: 0.4s;
+}
+  
+#logo-img img {
+    height: 60px;
+}
+  
+#logo-img:hover {
+    background: none;
+}
+
+/* Banner Hero */
+
+#template-mo-zay-hero-carousel { background: none;}
+
+#template-mo-zay-hero-carousel .carousel-indicators li {
+    margin-top: -50px;
+    background-color: #ed272c;
+}
+
+#template-mo-zay-hero-carousel .carousel-control-next i,
+#template-mo-zay-hero-carousel .carousel-control-prev i {
+    color: #ed272c;
+    font-size: 2.8em;
+}
+
+.text-success { color: #ed272c;}
+
+.tempaltemo-carousel .h1 {
+    font-size: .5em;
+    color: #000;
+}
+
+#carousel-related-product .slick-slide:focus { outline: none}
+#carousel-related-product .slick-dots li button:before {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+/* What's New */
+.about-start,
+.about-end {
+    background: --light center center no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 992px) {
+    .about-start {
+        position: relative;
+        margin-right: -90px;
+        z-index: 1;
+    }
+
+    .about-end {
+        position: relative;
+        margin-left: -90px;
+        z-index: 1;
+    }
+}
+
+th, td, tr {
+  padding: 15px;
+  position: relative;
+}
+
+
+/* Contact map */
+.leaflet-control a, .leaflet-control { font-size: 10px;}
+.form-control { border: 1px solid #e8e8e8;}
+
+/* Media Queries */
+
+@media (min-width: 992px) {
+    .navbar-dark .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: 0;
+        left: 50%;
+        background: #ed2827;
+        transition: .5s;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover::before,
+    .navbar-dark .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+
+    #logo {
+        padding-left: 0%;
+    }
+
+    #template-mo-zay-hero-carousel .carousel-item {min-height: 30rem;}
+}
+
+@media (min-width: 576px) {
+    .tempaltemo-carousel .h1 { font-size: 1em;}
+    th td tr { font-size: 0.5em; }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link th td tr{
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .bg-footer {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 900px) {
+ #sidebar{
+    display: none;
+  }
+}
